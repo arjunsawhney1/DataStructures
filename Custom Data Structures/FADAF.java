@@ -1,6 +1,5 @@
 /*
  * Name: Arjun Sawhney
- * PID: A15499408
  */
 
 import java.util.*;
@@ -23,7 +22,7 @@ public class FADAF<K extends Comparable<? super K>, D> {
 
     /**
      * Constructor for FADAF.
-     * 
+     *
      * @param capacity initial capacity
      * @throws IllegalArgumentException if capacity is less than the minimum
      *                                  threshold
@@ -37,7 +36,7 @@ public class FADAF<K extends Comparable<? super K>, D> {
 
     /**
      * Returns the total number of key-data pairs stored.
-     * 
+     *
      * @return count of key-data pairs
      */
     public int size() {
@@ -47,7 +46,7 @@ public class FADAF<K extends Comparable<? super K>, D> {
 
     /**
      * Returns the total number of unique keys stored.
-     * 
+     *
      * @return count of unique keys
      */
     public int nUniqueKeys() {
@@ -57,7 +56,7 @@ public class FADAF<K extends Comparable<? super K>, D> {
 
     /**
      * Insert the given key-data pair.
-     * 
+     *
      * @param key  key to insert
      * @param data data to insert
      * @return true if the pair is inserted, false if the pair was already present
@@ -77,7 +76,7 @@ public class FADAF<K extends Comparable<? super K>, D> {
 
     /**
      * Remove all key-data pairs that share the given key from the FADAF.
-     * 
+     *
      * @param key key to remove
      * @return true if at least 1 pair is removed, false otherwise
      * @throws NullPointerException if the key is null
@@ -106,7 +105,7 @@ public class FADAF<K extends Comparable<? super K>, D> {
 
     /**
      * Remove the specified pair from the FADAF.
-     * 
+     *
      * @param key  key of the pair to remove
      * @param data data of the pair to remove
      * @return true if this pair is removed, false if this pair is not present
@@ -126,7 +125,7 @@ public class FADAF<K extends Comparable<? super K>, D> {
 
     /**
      * Check if any pair with the given key is stored.
-     * 
+     *
      * @param key key to lookup
      * @return true if any pair is found, false otherwise
      * @throws NullPointerException if the key is null
@@ -139,7 +138,7 @@ public class FADAF<K extends Comparable<? super K>, D> {
 
     /**
      * Check if a pair with the given key and data is stored.
-     * 
+     *
      * @param key  key of the pair to lookup
      * @param data data of the pair to lookup
      * @return true if the pair is found, false otherwise
@@ -166,7 +165,7 @@ public class FADAF<K extends Comparable<? super K>, D> {
 
     /**
      * Return a LinkedList of all keys (including duplicates) in ascending order.
-     * 
+     *
      * @return a list of all keys, empty list if no keys stored
      */
     public LinkedList<K> getAllKeys() {
@@ -186,7 +185,7 @@ public class FADAF<K extends Comparable<? super K>, D> {
 
     /**
      * Return the minimum key stored.
-     * 
+     *
      * @return minimum key, or null if no keys stored
      */
     public K getMinKey() {
@@ -197,7 +196,7 @@ public class FADAF<K extends Comparable<? super K>, D> {
 
     /**
      * Return the maximum key stored.
-     * 
+     *
      * @return maximum key, or null if no keys stored
      */
     public K getMaxKey() {

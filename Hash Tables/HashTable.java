@@ -1,6 +1,5 @@
 /*
  * Name: Arjun Sawhney
- * PID: A15499408
  */
 
 import java.util.*;
@@ -24,7 +23,7 @@ public class HashTable<T> {
 
     /**
      * Constructor for hash table.
-     * 
+     *
      * @throws IllegalArgumentException if capacity is less than the minimum
      *                                  threshold
      */

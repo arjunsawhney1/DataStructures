@@ -1,13 +1,12 @@
 /*
  * Name: Arjun Sawhney
- * PID: A15499408
  */
 
 import java.util.*;
 
 /**
  * Modified generic Binary Search Tree that supports storing duplicates
- * 
+ *
  * @param <K> Generic type of key
  * @param <D> Generic type of data
  * @author Arjun Sawhney
@@ -22,7 +21,7 @@ public class DAFTree<K extends Comparable<? super K>, D> implements Iterable {
 
     /**
      * Generic Node to hold a key-data pair
-     * 
+     *
      * @param <K> Generic type of key
      * @param <D> Generic type of data
      */
@@ -34,7 +33,7 @@ public class DAFTree<K extends Comparable<? super K>, D> implements Iterable {
 
         /**
          * Initializes a DAFNode object.
-         * 
+         *
          * @param key  key of the node
          * @param data data of the node
          * @throws NullPointerException if key or data is null
@@ -152,7 +151,7 @@ public class DAFTree<K extends Comparable<? super K>, D> implements Iterable {
 
         /**
          * Check if obj equals to this object.
-         * 
+         *
          * @param obj object to compare with
          * @return true if equal, false otherwise
          */
@@ -170,7 +169,7 @@ public class DAFTree<K extends Comparable<? super K>, D> implements Iterable {
 
         /**
          * Returns the hash value of current node.
-         * 
+         *
          * @return hash value
          */
         @Override
@@ -276,7 +275,7 @@ public class DAFTree<K extends Comparable<? super K>, D> implements Iterable {
 
     /**
      * Returns the total number of elements stored in the tree.
-     * 
+     *
      * @return total number of elements stored
      */
     public int size() {
@@ -285,7 +284,7 @@ public class DAFTree<K extends Comparable<? super K>, D> implements Iterable {
 
     /**
      * Returns the total number of unique keys stored in the tree.
-     * 
+     *
      * @return total number of unique keys stored
      */
     public int nUniqueKeys() {
@@ -294,7 +293,7 @@ public class DAFTree<K extends Comparable<? super K>, D> implements Iterable {
 
     /**
      * Inserts a new node that has given key and data to the tree.
-     * 
+     *
      * @param key  key to insert
      * @param data data to insert
      * @return the inserted node object, or null if already exist
@@ -382,7 +381,7 @@ public class DAFTree<K extends Comparable<? super K>, D> implements Iterable {
 
     /**
      * Checks if the key is stored in the tree.
-     * 
+     *
      * @param key key to search
      * @return true if found, false otherwise
      * @throws NullPointerException if the key is null
@@ -425,7 +424,7 @@ public class DAFTree<K extends Comparable<? super K>, D> implements Iterable {
 
     /**
      * Checks if the specified key-data pair is stored in the tree.
-     * 
+     *
      * @param key  key to search
      * @param data data to search
      * @return true if found, false otherwise
@@ -474,7 +473,7 @@ public class DAFTree<K extends Comparable<? super K>, D> implements Iterable {
 
     /**
      * Returns a LinkedList of all data associated with the given key.
-     * 
+     *
      * @return list of data (empty if no data found)
      * @throws NullPointerException if the key is null
      */
@@ -507,7 +506,7 @@ public class DAFTree<K extends Comparable<? super K>, D> implements Iterable {
 
     /**
      * Removes the node with given key and data from the tree.
-     * 
+     *
      * @return true if removed, false if this node was not found
      * @throws NullPointerException if key or data is null
      */
@@ -526,7 +525,7 @@ public class DAFTree<K extends Comparable<? super K>, D> implements Iterable {
 
     /**
      * Removes all nodes with given key from the tree.
-     * 
+     *
      * @return true if any node is removed, false otherwise
      * @throws NullPointerException if the key is null
      */
@@ -554,7 +553,7 @@ public class DAFTree<K extends Comparable<? super K>, D> implements Iterable {
 
     /**
      * Returns a tree iterator instance.
-     * 
+     *
      * @return iterator
      */
     public Iterator<DAFNode<K, D>> iterator() {
@@ -586,7 +585,7 @@ public class DAFTree<K extends Comparable<? super K>, D> implements Iterable {
 
         /**
          * Checks if the iterator has next element.
-         * 
+         *
          * @return true if there is a next, false otherwise
          */
         public boolean hasNext() {
@@ -597,7 +596,7 @@ public class DAFTree<K extends Comparable<? super K>, D> implements Iterable {
 
         /**
          * Returns the next node of the iterator.
-         * 
+         *
          * @return next node
          * @throws NoSuchElementException if the iterator reaches the end of traversal
          */

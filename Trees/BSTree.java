@@ -1,13 +1,12 @@
 /*
  * Name: Arjun Sawhney
- * PID:  A15499408
  */
 
 import java.util.*;
 
 /**
  * Binary search tree implementation.
- * 
+ *
  * @author Arjun Sawhney
  * @since  05/07/2020
  */
@@ -203,7 +202,7 @@ public class BSTree<T extends Comparable<? super T>> implements Iterable {
      */
     private BSTNode findBSTNode(BSTNode node, T key) {
         // If the node is null, return null. Otherwise check for value and keep looking if not
-        // found 
+        // found
         if (node != null) {
             if (key.compareTo(node.getKey()) < 0) {
                 // If key is smaller than key or current node, recurse with left child node
@@ -251,7 +250,7 @@ public class BSTree<T extends Comparable<? super T>> implements Iterable {
 
     /**
      * Insert a key into BST
-     * 
+     *
      * @param key to be inserted
      * @return true if insertion is successful and false otherwise
      * @throws NullPointerException if key is null

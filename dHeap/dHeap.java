@@ -1,6 +1,5 @@
 /*
  * Name: Arjun Sawhney
- * PID:  A15499408
  */
 
 import java.util.*;
@@ -275,7 +274,7 @@ public class dHeap<T extends Comparable<? super T>> implements dHeapInterface<T>
     }
 
     /**
-     * Helper method that wraps around compareTo() to reduce the amount of code needed to 
+     * Helper method that wraps around compareTo() to reduce the amount of code needed to
      * differentiate between a min-dHeap and a max-dHeap
      *
      * @param a the first value to compare.

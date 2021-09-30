@@ -1,13 +1,12 @@
 /*
  * Name: Arjun Sawhney
- * PID:  A15499408
  */
 
 import java.util.NoSuchElementException;
 
 /**
  * d-Heap interface.
- * 
+ *
  * @param <T> Generic type
  */
 public interface dHeapInterface<T extends java.lang.Comparable<? super T>> {
@@ -44,7 +43,7 @@ public interface dHeapInterface<T extends java.lang.Comparable<? super T>> {
 
     /**
      * Retrieves, but does not remove, the element at the root.
-     * 
+     *
      * @return item at the root of the heap
      * @throws NoSuchElementException - if this heap is empty
      */

@@ -1,6 +1,5 @@
 /*
  * Name: Arjun Sawhney
- * PID:  A15499408
  */
 
 /**
@@ -19,7 +18,7 @@ public class MyPriorityQueue<T extends Comparable<? super T>> {
 
     /**
      * Constructor that creates a new priority queue
-     * 
+     *
      * @param initialSize the given size
      */
     public MyPriorityQueue(int initialSize) {
@@ -71,7 +70,7 @@ public class MyPriorityQueue<T extends Comparable<? super T>> {
     /**
      * Retrieves, but does not remove, the head of this queue, or returns null if
      * this queue is empty.
-     * 
+     *
      * @return the next item to be removed, null if the queue is empty
      */
     public T peek() {
